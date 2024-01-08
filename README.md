@@ -52,9 +52,7 @@ When the form is filled in with valid data, THEN the confess button becomes enab
 	"details": "details here"
 }
 
-👉 The endpoint responds with:
-
-// JSON
+👉 The endpoint responds with the following JSON data:
 {
 	"success": boolean, 
 	"justTalked": boolean; 
