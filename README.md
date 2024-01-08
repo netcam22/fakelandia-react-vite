@@ -48,7 +48,7 @@ When the form is filled in with valid data, THEN the confess button becomes enab
 👉 When submitting a form, the data is POSTed to the server to the endpoint {sameBaseUrl}/api/confess in  the following format:
 {
 	"subject": "subject line",
-	"reason": "", // either a MisdemeanourKind OR the string `just-talk`
+	"reason": "", 
 	"details": "details here"
 }
 
@@ -56,9 +56,9 @@ When the form is filled in with valid data, THEN the confess button becomes enab
 
 // JSON
 {
-	"success": boolean, // true for success; false for an error
-	"justTalked": boolean; // true if this was just wanting to talk, false for a real confession. Not present if success is false.
-	"message": string; // a message
+	"success": boolean, 
+	"justTalked": boolean; 
+	"message": string; 
 }
 
 👉 When your app receives the response to the POST, the app:
