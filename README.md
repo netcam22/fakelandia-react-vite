@@ -24,11 +24,7 @@ Despite the clear severity of some of these awful crimes, the Fakelandians refer
 
 The Fakelandians have a browsable list of all four misdemeanours. First, they show the citizen ID of the person committing the misdemeanour. (Rest assured they keep their data carefully anonymised so these IDs can't be traced back to individuals!). Then they show the date, the misdemeanour, and the "Punishment Idea". 
 
-Under the Fakelandian system all punishments are random. They find a random picture on the internet and use it as inspiration for the appropriate punishment. Due to the low number of crimes, this weird system supposedly works extremely well.
-
-The random punishment inspiration uses a service called Picsum, which can be accessed simply by putting a particular URL into an image tag:
-
-<img src='https://picsum.photos/{width}/{height}' />;
+Under the Fakelandian system all punishments are random. They find a random picture on the internet and use it as inspiration for the appropriate punishment. Due to the low number of crimes, this weird system supposedly works extremely well. The random punishment inspiration uses a service called Picsum, which can be accessed simply by putting a particular URL into an image tag.
 
 ## Project Structure
 
