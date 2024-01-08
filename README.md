@@ -22,7 +22,7 @@ Despite the clear severity of some of these awful crimes, the Fakelandians refer
 
 👉 The home page has some statistics with total misdemeanours for each type, in four boxes which reveal the data when hovered over.
 
-The Fakelandians have browsable list of all misdemeanours with four. First, the citizen ID of the person committing the misdemeanour. (Rest assured they keep their data carefully anonymised so these IDs can't be traced back to individuals!). Then they show the date, the misdemeanour, and the "Punishment Idea". 
+The Fakelandians have browsable list of all four misdemeanours. First, they show the citizen ID of the person committing the misdemeanour. (Rest assured they keep their data carefully anonymised so these IDs can't be traced back to individuals!). Then they show the date, the misdemeanour, and the "Punishment Idea". 
 
 Under the Fakelandian system all punishments are random. They find a random picture on the internet and use it as inspiration for the appropriate punishment. Due to the low number of crimes, this weird system supposedly works extremely well.
 
