@@ -6,6 +6,7 @@ import MisdemeanourTableHeading from "./misdemeanour-heading";
 import FilterMisdemeanoursForm from "./filter-misdemeanours-form";
 import { SelectOptions, initialValues} from "../../data/filter_misdemeanour_form_data";
 import { MisdemeanourContext } from "./misdemeanour-data-wrapper";
+import useMisdemeanourRoute from "../../hooks/use_misdemeanour_route";
 
 export type FilterContextType = [SelectOptions, React.Dispatch<React.SetStateAction<SelectOptions>>] | [];
 
@@ -16,6 +17,8 @@ export const MisdemeanourContainer : React.FC = () => {
 const [misdemeanourData] =  useContext(MisdemeanourContext);
 
 const [selectedFilter, setSelectedFilter] = useState({...initialValues});
+
+const routeTo = useMisdemeanourRoute();
 
 return (
 <>
@@ -36,7 +39,7 @@ return (
     
     {misdemeanourData && misdemeanourData.length > 0 &&
     <MisdemeanourFilterContext.Provider value={[selectedFilter, setSelectedFilter]}>
-    <MisdemeanourList/>
+    <MisdemeanourList routeTo = {routeTo}/>
     </MisdemeanourFilterContext.Provider>} 
 
     </section>

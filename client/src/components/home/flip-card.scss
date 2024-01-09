@@ -41,6 +41,20 @@
             max-width: 40%;
             flex-basis: 40%;
         }
+        &--link {
+            font-family: "Algeria";
+            font-size: 1.3rem;
+            margin: 5%;
+            text-decoration: none;
+            text-align: center;
+        }
+        &--link a {
+            text-decoration: none;
+            color: $dark-blue;
+        }
+        &--link a:hover{
+            color: $cherry;
+        }
     }
 
     &:hover &__inner {
