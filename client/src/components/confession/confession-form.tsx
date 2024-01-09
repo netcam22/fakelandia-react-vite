@@ -26,6 +26,7 @@ const ConfessionForm : React.FC<ConfessionFormProps> =
 
 	function handleChange(event: ChangeEvent<HTMLInputElement> | 
 		ChangeEvent<HTMLTextAreaElement> | ChangeEvent<HTMLSelectElement>) {
+
         if (setInput) {
 		setInput((currentData) =>
 			Object.assign({}, currentData, {
