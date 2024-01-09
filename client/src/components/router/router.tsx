@@ -10,9 +10,10 @@ export const Router = () => {
     <Routes>
         <Route path = "/" element = {<MainLayout/>}>
             <Route index element = {<Home/>}/>
-            <Route path = "misdemeanours" element = {<MisdemeanourContainer />}/>
-            <Route path = "confession" 
-            element = {<Confession/>}/>
+            <Route path = "misdemeanours" element = {<MisdemeanourContainer />}>
+                <Route path=":paramKind" element={<MisdemeanourContainer />} />
+            </Route>
+            <Route path = "confession" element = {<Confession/>}/>
             <Route path = "*" element = {<NotFound/>}/>
         </Route>
     </Routes>

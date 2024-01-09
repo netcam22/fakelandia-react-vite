@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { MisdemeanourIcon, MisdemeanourTitle } from "../../types/misdemeanour_client_types";
 
 export interface FlipCardProps {
@@ -13,7 +14,7 @@ const FlipCard: React.FC<FlipCardProps> = ({title, count, icon, image, alt, cssC
 
     const cssClassFront = `flip-card__front flip-card__front--${cssClassType}`; 
     const cssClassBack = `flip-card__back flip-card__back--${cssClassType}`;
-
+    const link = `/misdemeanours/${cssClassType}`;
     return (
         <div className="flip-card">
         <div className="flip-card__inner">
@@ -25,7 +26,8 @@ const FlipCard: React.FC<FlipCardProps> = ({title, count, icon, image, alt, cssC
                 role = 'logo-image' src= {image}></img>
             </div>
             <div className={cssClassBack}>
-                <h1 className="flip-card__inner--title">{title}</h1> 
+                <h1 className="flip-card__inner--link">
+                    <NavLink to = {link}>{title} Misdemeanours</NavLink></h1> 
                 <p className="flip-card__inner--icon">{icon}</p> 
                 <p className="flip-card__inner--text">Misdemeanours reported today: {count}</p> 
             </div>

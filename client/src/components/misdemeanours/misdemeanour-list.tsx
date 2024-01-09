@@ -5,12 +5,16 @@ import { MisdemeanourObject } from "../../types/misdemeanour_client_types";
 import { MisdemeanourContext } from "./misdemeanour-data-wrapper";
 import useMisdemeanourFilter from "../../hooks/use_misdemeanour_filter";
 
-const MisdemeanourList : React.FC = () => {
+interface MisdemeanourListProps {
+        routeTo: {[x: string]: string} | undefined;
+}
+
+const MisdemeanourList : React.FC<MisdemeanourListProps> = ({routeTo}) => {
 
 const [misdemeanourData] =  useContext(MisdemeanourContext);
 const [selectedFilter] = useContext(MisdemeanourFilterContext);
 const filteredMisdemeanours: Array<MisdemeanourObject> | null = 
-useMisdemeanourFilter(misdemeanourData, selectedFilter);
+useMisdemeanourFilter(misdemeanourData, selectedFilter, routeTo);
 
 return (
         <>

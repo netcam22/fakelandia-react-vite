@@ -6,7 +6,7 @@ import { MISDEMEANOUR_OPTIONS } from "../types/misdemeanour_client_types";
 const today = new Date().toLocaleDateString("en-GB");
 const selectAll = `Show all Misdemeanours from ${today}`;
 const MISDEMEANOUR_FILTER_OPTIONS = [selectAll, ...MISDEMEANOUR_OPTIONS];
-const MISDEMEANOUR_FILTER_OPTION_VALUES = ["all", ...MISDEMEANOURS];
+const MISDEMEANOUR_FILTER_OPTION_VALUES = ["", ...MISDEMEANOURS];
 
 export type MisdemeanourFilterKind = (typeof MISDEMEANOUR_FILTER_OPTIONS)[number];
 export type SelectOptions = {[key: string]: MisdemeanourFilterKind};
