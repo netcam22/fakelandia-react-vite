@@ -22,13 +22,11 @@ export type ConfessionFormProps = {
 const ConfessionForm : React.FC<ConfessionFormProps> = 
 ({attempted, errors, hasErrors, handleSubmit, formMessages}) => {
 
-	console.log("attempted", attempted, "errors", errors, hasErrors, handleSubmit, "formMessages", formMessages);
-
     const [input, setInput] = useContext(ConfessionFormContext);
 
 	function handleChange(event: ChangeEvent<HTMLInputElement> | 
 		ChangeEvent<HTMLTextAreaElement> | ChangeEvent<HTMLSelectElement>) {
-		event.preventDefault();
+
         if (setInput) {
 		setInput((currentData) =>
 			Object.assign({}, currentData, {
