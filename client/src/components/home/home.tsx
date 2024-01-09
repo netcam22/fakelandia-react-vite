@@ -25,7 +25,7 @@ return (
 
         {misdemeanourTotals && Object.entries(MISDEMEANOUR_VIEWS).map(([key, value], index) => 
         <FlipCard title={value.desc} alt={`Picture of ${value.desc} misdemeanour`} 
-        icon ={value.icon} image={logo} key={index.toString()} cssClassType ={key} 
+        icon ={value.icon} image={logo} key={index.toString()} misdemeanourType ={key} 
         count={misdemeanourTotals[key]} />
         )}
 

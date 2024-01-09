@@ -6,15 +6,15 @@ export interface FlipCardProps {
     count: number;
     image: string;
     alt: string;
-    cssClassType: string;
+    misdemeanourType: string;
     icon: MisdemeanourIcon;
 }
 
-const FlipCard: React.FC<FlipCardProps> = ({title, count, icon, image, alt, cssClassType}) => {
+const FlipCard: React.FC<FlipCardProps> = ({title, count, icon, image, alt, misdemeanourType}) => {
 
-    const cssClassFront = `flip-card__front flip-card__front--${cssClassType}`; 
-    const cssClassBack = `flip-card__back flip-card__back--${cssClassType}`;
-    const link = `/misdemeanours/${cssClassType}`;
+    const cssClassFront = `flip-card__front flip-card__front--${misdemeanourType}`; 
+    const cssClassBack = `flip-card__back flip-card__back--${misdemeanourType}`;
+    const link = `/misdemeanours/${misdemeanourType}`;
     return (
         <div className="flip-card">
         <div className="flip-card__inner">
@@ -23,7 +23,7 @@ const FlipCard: React.FC<FlipCardProps> = ({title, count, icon, image, alt, cssC
             <p className="flip-card__inner--icon">{icon}</p> 
             <img className = "flip-card__inner--logo" 
                 alt = {alt}
-                role = 'logo-image' src= {image}></img>
+                src= {image}></img>
             </div>
             <div className={cssClassBack}>
                 <h1 className="flip-card__inner--link">
