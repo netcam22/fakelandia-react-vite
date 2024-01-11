@@ -46,7 +46,7 @@
 
     @each $misdemeanour, $colour in $misdemeanour-colours {
       &--#{$misdemeanour}{
-          background-color: lighten($colour, 32%);
+          background-color: lighten($colour, 30%);
       }
     }
   }
