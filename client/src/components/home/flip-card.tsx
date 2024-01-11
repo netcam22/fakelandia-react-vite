@@ -28,7 +28,6 @@ const FlipCard: React.FC<FlipCardProps> = ({title, count, icon, image, alt, misd
             <div className={cssClassBack}>
                 <h1 className="flip-card__inner--link">
                     <NavLink to = {link}>{title} Misdemeanours</NavLink></h1> 
-                <p className="flip-card__inner--icon">{icon}</p> 
                 <p className="flip-card__inner--text">Misdemeanours reported today: {count}</p> 
             </div>
         </div>  
