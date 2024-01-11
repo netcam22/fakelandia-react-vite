@@ -27,10 +27,14 @@
         margin: 5% 10%;
         &--lemon {
             background-color: lighten($lemon, 30%);
+            padding-bottom: 10%;
             color: $dark-blue;
             border: darken($lemon, 15%) solid 1px;
             border-radius: 1%;
             box-shadow: $box-shadow;
+            background-position-y: bottom;
+            background-repeat: repeat-x;
+            background-image: url("./../../src/assets/images/houses.png");
         }
     }
 
