@@ -8,11 +8,11 @@
     font-weight:500;
 
     &--blue {
-        background-color: lighten($blueberry, 40%);
+        background-color: lighten($blueberry, 38%);
         color: $dark-blue;
-        border: $dark-blue solid 1px;
+        border: darken($blueberry, 5%) solid 1px;
         border-radius: 1%;;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: $box-shadow;
     }
 
     &::after {
@@ -26,11 +26,11 @@
         width: 80%;
         margin: 5% 10%;
         &--lemon {
-            background-color: lighten($lemon, 35%);
+            background-color: lighten($lemon, 30%);
             color: $dark-blue;
-            border: $dark-blue solid 1px;
+            border: darken($lemon, 15%) solid 1px;
             border-radius: 1%;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            box-shadow: $box-shadow;
         }
     }
 

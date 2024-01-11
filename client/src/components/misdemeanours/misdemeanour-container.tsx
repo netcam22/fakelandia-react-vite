@@ -29,11 +29,11 @@ return (
     </MisdemeanourFilterContext.Provider>}
 
     <section className = "container">
-
+    <div className = "row row--headings">
     {MISDEMEANOUR_DATA_HEADINGS.map((heading: MisdemeanourHeading, index: number) => {
     return <MisdemeanourTableHeading key={index.toString()} heading={heading} />} 
     )}
-    
+    </div>
     {misdemeanourData && misdemeanourData.length === 0 && 
 	<ShowLoading /> }
     

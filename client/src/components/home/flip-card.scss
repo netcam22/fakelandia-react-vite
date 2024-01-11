@@ -18,7 +18,7 @@
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: $box-shadow;
 
         &--title {
             font-family: "Algeria";
@@ -72,21 +72,20 @@
 
     &__front {   
         color: $dark-blue;
+        @each $misdemeanour, $colour in $misdemeanour-colours {
+            &--#{$misdemeanour}{
+                background-color: lighten($colour, 15%);
+            }
+        }
     }
 
     &__back {
         transform: rotateY(180deg);
-    }
-
-    $flip-card-colors: ('rudeness': $blueberry, 'lift': $lime, 
-    'vegetables': $olive, 'united': $lemon);
-
-    @each $misdemeanour, $colour in $flip-card-colors {
-        .flip-card__front--#{$misdemeanour}{
-            background-color: lighten($colour, 15%);
-        }
-        .flip-card__back--#{$misdemeanour}{
-            background-color:  lighten($colour, 30%);
+        @each $misdemeanour, $colour in $misdemeanour-colours {
+            &--#{$misdemeanour}{
+                background-color:  lighten($colour, 30%);
+            }
         }
     }
+
 }

@@ -6,6 +6,12 @@ $lemon: rgb(243, 236, 24);
 $olive: rgb(142, 173, 79);
 $cherry: rgb(239, 30, 36);
 
+$misdemeanour-colours: ('rudeness': $blueberry, 'lift': $lime, 
+'vegetables': $olive, 'united': $lemon);
+
+$grey: rgba(0,0,0,0.2);
+$box-shadow: 0 4px 8px 0 $grey;
+
 /* Font: Algeria Regular[Font]
 "https://fontsgeek.com/fonts/Algerian-Regular"
 Accessed 28/12/23 */
