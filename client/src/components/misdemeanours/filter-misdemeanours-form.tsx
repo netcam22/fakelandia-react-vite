@@ -1,6 +1,6 @@
 import { ChangeEvent, useContext} from 'react';
 import { SelectInput } from '../form-components/select-input';
-import { formSelectInput} 
+import { filterFormSelectInput} 
 from '../../data/filter_misdemeanour_form_data';
 import { FormSelectInputObject} from '../../types/form.types';
 import { SelectOptions } from '../../data/filter_misdemeanour_form_data';
@@ -23,7 +23,7 @@ const FilterMisdemeanoursForm = () => {
 
 	return (
 		<form className='filter-misdemeanours-form'>
-			{formSelectInput.map((field: FormSelectInputObject) => 
+			{filterFormSelectInput.map((field: FormSelectInputObject) => 
 				<SelectInput
 				key = {field.id}
 				title = {field.title} 
