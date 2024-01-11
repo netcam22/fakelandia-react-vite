@@ -65,7 +65,9 @@ The project includes custom hooks to ensure separation of frontend logic from th
 
 💡 A useMisdemeanourRoute custom hook checks if the route parameter is a valid misdemeanour and if it is, returns data for that route in the same type as a selected filter from the filter misdemeanours form.
 
-💡 A useMisdemeanourFilter custom hook consolidates data from both the chosen parameter in the routing and any selected filter on the misdemeanours page. A selected filter is prioritised, allowing a user to make a further selection which overrides routing, otherwise url parameter routing is used.
+💡 A useMisdemeanourFilter returns a filtered list of misdemeanours, returning a filtered list based on either a url route or a select option.
+
+💡 A useSelectFilter returns a filter string either based on a url route or select option, prioritising the user selected option.
 
 💡 A useValidate custom hook provides generic validation of form inputs using their associated arrays of regular expressions and corresponding error messages stored in the data folder. This hook returns a string of one or more errors for each input to be displayed below associated form fields. These errors are updated and shown on each render after form submission has been attempted.
 
