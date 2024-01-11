@@ -24,6 +24,6 @@ export const MISDEMEANOUR_VIEWS: MisdemeanourView = {
 	united:  {icon: "😈", desc: "Supporting Manchester United"}
  } as const;
 
- export const MISDEMEANOUR_OPTIONS = Object.values(MISDEMEANOUR_VIEWS).map((view) => view.desc);
+ export const MISDEMEANOUR_OPTIONS = Object.values(MISDEMEANOUR_VIEWS).map((view) => `${view.desc} ${view.icon}`);
 
  export type MisdemeanourCountType = {[key : string] : number};
