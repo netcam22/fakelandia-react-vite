@@ -25,7 +25,7 @@ return (
     <h1 className = "page__title">Misdemeanours</h1>
 
     {<MisdemeanourFilterContext.Provider value={[selectedFilter, setSelectedFilter]}>
-    <FilterMisdemeanoursForm />
+    <FilterMisdemeanoursForm routeTo = {routeTo}/>
     </MisdemeanourFilterContext.Provider>}
 
     <section className = "container">
