@@ -32,7 +32,7 @@ it('displays select input field when rendering filter misdemeanours form', () =>
 		attempted: false,
 		options: MISDEMEANOUR_FORM_OPTIONS, 
         optionValues: MISDEMEANOUR_FORM_OPTION_VALUES,
-		routeTo: {paramKind: "vegetables"}
+		routeTo: "vegetables"
 	};
 	//Act
 	render(<SelectInputFilter {...requiredProps}/>);
@@ -52,7 +52,7 @@ it('displays value united in filter misdemeanours form input field ', () => {
 		attempted: false,
 		options: MISDEMEANOUR_FORM_OPTIONS, 
         optionValues: MISDEMEANOUR_FORM_OPTION_VALUES,
-		routeTo: {paramKind: "united"}
+		routeTo: "united"
 	};
 	//Act
 	render(<SelectInputFilter {...requiredProps}/>);
@@ -73,7 +73,7 @@ it('calls onChange function when user selects option vegetables', () => {
 		attempted: false,
 		options: MISDEMEANOUR_FORM_OPTIONS, 
         optionValues: MISDEMEANOUR_FORM_OPTION_VALUES,
-		routeTo: {paramKind: "vegetables"}
+		routeTo: "vegetables"
 	};
 	//Act
 	render(<SelectInputFilter {...requiredProps}/>);
