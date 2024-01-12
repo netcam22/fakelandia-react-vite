@@ -8,7 +8,7 @@ const useMisdemeanourFilter = (misdemeanourData: Array<MisdemeanourObject> | und
   const filter = useSelectFilter(selectedFilter?.filterMisdemeanours, routeTo?.paramKind);
 
   if (misdemeanourData) {
-    if (filter && filter !== "all") {
+    if (filter && (filter !== "all" && filter !== "")) {
     return misdemeanourData.filter((row: MisdemeanourObject) => row.misdemeanour 
         === filter);
     }

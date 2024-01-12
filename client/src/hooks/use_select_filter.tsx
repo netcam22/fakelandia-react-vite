@@ -5,7 +5,7 @@ const useSelectFilter = (filter: string | undefined,
     filter:
     routeTo && routeTo?
     routeTo:
-    undefined;
+    "";
 
 };
 export default useSelectFilter;
