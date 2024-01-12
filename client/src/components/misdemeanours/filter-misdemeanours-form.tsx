@@ -5,6 +5,8 @@ from '../../data/filter_misdemeanour_form_data';
 import { FormSelectInputObject} from '../../types/form.types';
 import { SelectOptions } from '../../data/filter_misdemeanour_form_data';
 import { MisdemeanourFilterContext } from './misdemeanour-container';
+import useSelectFilter from '../../hooks/use_select_filter';
+import { useNavigate } from 'react-router-dom';
 
 interface MisdemeanourFormProps {
 	routeTo: SelectOptions | undefined;
@@ -13,9 +15,12 @@ interface MisdemeanourFormProps {
 const FilterMisdemeanoursForm : React.FC<MisdemeanourFormProps> = ({routeTo}) => {
 
 	const [selectedOption, setSelectedOption] = useContext(MisdemeanourFilterContext);
-
+	const filter = useSelectFilter(selectedOption?.filterMisdemeanours, routeTo?.paramKind);
+	const navigate = useNavigate();
 	function handleChange(event: ChangeEvent<HTMLSelectElement>) {
-		event.preventDefault();
+		if  (event.target.value === "all") {
+			navigate("/misdemeanours");
+		}
 		if (setSelectedOption) {
 			setSelectedOption((currentData: SelectOptions) =>
 			Object.assign({}, currentData, {
@@ -38,7 +43,7 @@ const FilterMisdemeanoursForm : React.FC<MisdemeanourFormProps> = ({routeTo}) =>
 				options = {field.options}
 				optionValues = {field.optionValues}
 				attempted = {true}
-				routeTo = {routeTo}
+				routeTo = {filter}
 				/>)
 			}
 		</form>	
