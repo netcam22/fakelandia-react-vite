@@ -129,6 +129,6 @@ This uses an `npm` package called `concurrently` to run both the client React ap
 
 ## Tests
 
-💡 You can run the 47 tests provided by the appliction with `npm run test-client` in the root folder, or navigate to the client folder and run npm test.
+💡 You can run the 50 tests provided by the appliction with `npm run test-client` in the root folder, or navigate to the client folder and run npm test.
 
 🤪🗣🥗😈🤪🗣🥗😈🤪🗣🥗😈🤪🗣🥗😈🤪🗣🥗😈🤪🗣🥗😈🤪🗣🥗😈🤪🗣🥗😈
