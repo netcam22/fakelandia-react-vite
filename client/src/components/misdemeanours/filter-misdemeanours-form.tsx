@@ -1,5 +1,5 @@
 import { ChangeEvent, useContext} from 'react';
-import { SelectInput } from '../form-components/select-input';
+import { SelectInputFilter } from '../form-components/select-input-filter';
 import { filterFormSelectInput} 
 from '../../data/filter_misdemeanour_form_data';
 import { FormSelectInputObject} from '../../types/form.types';
@@ -28,7 +28,7 @@ const FilterMisdemeanoursForm : React.FC<MisdemeanourFormProps> = ({routeTo}) =>
 	return (
 		<form className='filter-misdemeanours-form'>
 			{filterFormSelectInput.map((field: FormSelectInputObject) => 
-				<SelectInput
+				<SelectInputFilter
 				key = {field.id}
 				title = {field.title} 
 				errorMessage = {""}
