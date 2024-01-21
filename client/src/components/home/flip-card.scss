@@ -83,7 +83,7 @@
         transform: rotateY(180deg);
         background-position-y: bottom;
         background-repeat: repeat-x;
-        background-image: url("./../../src/assets/images/houses.png");
+        background-image: url("/images/houses.png");
         @each $misdemeanour, $colour in $misdemeanour-colours {
             &--#{$misdemeanour}{
                 background-color:  lighten($colour, 30%);

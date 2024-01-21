@@ -7,7 +7,7 @@ export type MisdemeanourHeading = "Citizen Id" | "Date" | "Misdemeanour" | "Puni
 export type MisdemeanourHeadings  = Array<MisdemeanourHeading>;
 
 export const MISDEMEANOUR_DATA_HEADINGS : 
-MisdemeanourHeadings  = ["Citizen Id", "Date", "Misdemeanour", "Punishment Idea"] as const;
+MisdemeanourHeadings  = ["Citizen Id", "Date", "Misdemeanour", "Punishment Idea"];
 
 export type MisdemeanourTitle  = "Mild Public Rudeness" | "Not Eating Your Vegetables" |
 "Speaking in a Lift" | "Supporting Manchester United";

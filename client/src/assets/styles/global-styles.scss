@@ -17,7 +17,7 @@ $box-shadow: 0 4px 8px 0 $grey;
 Accessed 28/12/23 */
 @font-face {
   font-family: "Algeria";
-  src: url("./src/assets/fonts/AlgerianRegular.ttf");
+  src: url("/fonts/AlgerianRegular.ttf");
 }
 
 @mixin respond-small {
